@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="projectsApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>My Projects</title>
+		<!-- jQuery library -->
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<!-- Bootstrap.css -->
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap-theme.min.css">
+		<!-- magic.css animation library -->
+		<link rel="stylesheet" href="magic.min.css">
+		<!-- Custom stylesheets -->
+		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="main.css">
+		<!-- Wow.js for scroll animations on animate.css -->
+        <script src="wow.min.js"></script>
+        <script>
+        	new WOW({offset: 400}).init();
+        </script>
+	</head>
+	<body>
+		<div class="subheading subheadingL">
+			Projects
+		</div>
+		<div class="boundary"></div>
+		<div class="menuContainer" ng-controller="menuCtrl">
+			<img id="mainbutton" src="Images/menubutton.png" height="60px" class="menuButton" onclick="updateMenuItems()"/>
+			<div id="menucontainer"></div>
+			<a href="index.html" title="Home">
+				<img src="Images/home.png" height="27px" class="menuIcon"/>
+			</a>
+			<a href="myprojects.html" title="Projects">
+				<img src="Images/projects.png" height="30px" class="menuIcon"/>
+			</a>
+			<a href="https://erilyth.wordpress.com/" title="Blog">
+				<img src="Images/blog.png" height="30px" class="menuIcon"/>
+			</a>
+			<a href="instructables.html" title="Instructables">
+				<img src="Images/instructables.png" height="22px" style="margin-left:4px; margin-top:6px;" class="menuIcon"/>
+			</a>
+		</div>
+		<div class="container" ng-controller="projectsCtrl">
+			<div ng-repeat="project in projectList" style="margin:4%;margin-left:5%;">
+				<projectdetail projectdetaildata="project" class="wow magictime spaceInLeft" data-wow-offset="200"></projectdetail>
+			</div>
+		</div>
+		<!-- AngularJS library -->
+		<script src="angular.min.js"></script>
+		<script src="crossfade.js"></script>
+		<script src="directives/projectdetail.js"></script>
+		<script src="controllers/controller.js"></script>
+		<script src="menu.js"></script>
+		<script src="scroll.js"></script>
+	</body>
+</html>
+
+

@@ -1,0 +1,94 @@
+body {
+    background-color: #cce5ff;
+}
+
+img.mainTitle {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#menucontainer {
+    position: fixed;
+    border-radius: 10px;
+    top: 50%;
+    background-color: #A8B7BF; 
+    height: 70px;
+    width: 70px;
+    margin-left: 9px;
+    margin-top: -5px;
+    box-shadow: 5px 3px 2px #455A64;
+    z-index: 2;
+}
+
+#menucontainer.sticky {
+    top: 40%;
+}
+
+img.menuButton {
+    position:fixed; 
+    top:50%;
+    left: 15px;
+    z-index: 5;
+}
+
+img.menuButton.sticky {
+    top: 30%;
+}
+
+img.menuIcon {
+    position:fixed;
+    top: 53%;
+    z-index: 2;
+}
+
+.changeText span {
+    opacity: 0;
+    font-size: 1.5em;
+    margin-left: -0.3em;
+    margin-top: -0.95em;
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    animation: rotateWord 9s linear infinite 0s;
+}
+
+.changeText span:nth-child(1) {
+    animation-delay: 0s;
+}
+.changeText span:nth-child(2) {
+    animation-delay: 3s;
+}
+.changeText span:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes rotateWord {
+  0% { opacity: 0; }
+  2% { opacity: 0; transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; transform: translateY(0px); transform: translateY(0px);}
+  30% { opacity: 1; transform: translateY(0px); transform: translateY(0px); }
+	33% { opacity: 0; ransform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+headingText {
+    background: #0e8dbc;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}

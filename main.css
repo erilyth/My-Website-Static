@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Choplin-ExtraLight;
+    src: url(fonts/Choplin-ExtraLight-DEMO.otf);
+}
+
+@font-face {
+    font-family: Harabara;
+    src: url(fonts/Harabara.otf);
+}
+
+@font-face {
+    font-family: FortuneCity;
+    src: url(fonts/FortuneCity.ttf);
+}
+
+body{
+	font-family: Choplin-ExtraLight;
+  background-image: url("Images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* This sticky class is added onto the subheading after scroll */
+.heading.sticky {
+	font-size: 1em;
+}
+
+/* This sticky class is added onto the subheading after scroll immediately */
+.heading.sticky2 {
+	position: fixed;
+	width: 100%;
+}
+
+.heading {
+	color: white;
+	padding: 2%;
+	background-color: #0073e6;
+	text-align: center;
+	font-size: 5em;
+	font-family: Harabara;
+	text-shadow: 2px 2px 2px #555555;
+	z-index: 15;
+}
+
+/* This sticky class is added onto the subheading after scroll */
+.subheading.sticky {
+	display: none;
+}
+
+/* This sticky class is added onto the subheading contents after scroll */
+.subheadingcontent.sticky {
+	display: none;
+}
+
+.subheadingcontent {
+	display: inline-block;
+	font-size:2em;
+	padding-left:1em;
+}
+
+.subheading {
+	padding: 2%;
+	background-color: #66b3ff;
+	text-align: center;
+	font-family: FortuneCity;
+	text-shadow: 1px 1px 1px #aaaaaa;
+	margin-left:-8%;
+	font-size:1em;
+	color:#808080;
+}
+
+.subheadingL {
+	font-size: 4em;
+	margin-left: 0%;
+	color: #EEEEEE;
+}
+
+.boundary {
+	background-color: #1a8cff;
+	height: 15px;
+}
+
+.cover {
+	position: relative;
+	width: 100%;
+	z-index: -10;
+}
+
+.boundaryDivider {
+	position: relative;
+	width: 100%;
+	z-index: -10;
+}
+
+.contact {
+	position: relative;
+	width: 100%;
+	z-index: -10;
+}
+
+.about {
+	position: relative;
+	width: 100%;
+	z-index: -10;
+}
+
+.text-center {
+	z-index: -10;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 15%;
+	font-size: 2em;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="homeApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>index</title>
+		<!-- jQuery library -->
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<!-- Bootstrap.css -->
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap-theme.min.css">
+		<!-- Custom stylesheets -->
+		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div class="heading" id="heading">Vishal Batchu</div>
+		<div class="boundary"></div>
+		<div class="subheading">
+			<div class="subheadingcontent">I like to</div>
+			<div class="subheadingcontent changeText">
+				<span>Code</span>
+				<span>Game</span>
+				<span>Eat</span>
+			</div>
+		</div>
+		<div class="menuContainer">
+			<img id="mainbutton" src="Images/menubutton.png" height="60px" class="menuButton" onclick="updateMenuItems()"/>
+			<div id="menucontainer"></div>
+			<a href="index.html" title="Home">
+				<img src="Images/home.png" height="27px" class="menuIcon"/>
+			</a>
+			<a href="myprojects.html" title="Projects">
+				<img src="Images/projects.png" height="30px" class="menuIcon"/>
+			</a>
+			<a href="https://erilyth.wordpress.com/" title="Blog">
+				<img src="Images/blog.png" height="30px" class="menuIcon"/>
+			</a>
+			<a href="instructables.html" title="Instructables">
+				<img src="Images/instructables.png" height="22px" style="margin-left:4px; margin-top:6px;" class="menuIcon"/>
+			</a>
+		</div>
+
+		<div style="height: 750px;">
+			<div id="maincontent11" style="font-weight:bold; z-index:1; font-size: 4em; position: absolute; margin-left:6%; margin-top:100px;">
+				&lt;developer/&gt;
+			</div>
+			<div id="maincontent12" style="font-weight:bold; z-index:1; font-size: 4em; position: absolute; margin-left:72%; margin-top:100px;">
+				designer
+			</div>
+			<div id="maincontent13" style="width:20%; z-index:1; font-size: 1.5em; position: absolute; margin-left:6%; padding-left: 20px; margin-top:190px;">
+				Full stack developer who prefers clean and efficient code
+			</div>
+			<div id="maincontent14" style="width:20%; z-index:1; font-size: 1.5em; position: absolute; margin-left:72%; padding-left: 20px; margin-top:190px;">
+				Web designer with a passion for developing minimalistic content
+			</div>
+			<div class="cover" style="height: 100%;">
+			</div>
+		</div>
+
+		<div style="height: 150px;">
+			<div class="boundaryDivider" style="z-index:0; height:150px; position: absolute;">
+			</div>
+		</div>
+
+		<div style="height: 700px;">
+			<div class="text-center" id="maincontent2" style="z-index:1; height: 100%; position: absolute; padding: 10%;">
+				<p style="font-size: 2em; font-weight: bold;">About Me</p>
+				<p>An enthusiastic programmer who enjoys developing
+				software. I have also worked alongside a few of open
+				source organizations. Computer vision and Image
+				processing are some of my research interests.
+				Apart from the technical aspects, I thoroughly enjoy gaming</p>
+			</div>
+			<div class="about" style="height: 100%;">
+			</div>
+		</div>
+
+		<div style="height:150px;">
+			<div class="boundaryDivider" style="z-index:0; height:150px; position: absolute;">
+			</div>
+		</div>
+
+		<div style="height: 600px;">
+			<div id="maincontent31" style="margin-left:60%; margin-top:250px; z-index:3; width:100%; position: absolute;">
+				<table width="30%">
+					<tr>
+						<td><a href="https://www.facebook.com/vishal.batchu"><img src="Images/fblogo.png" class="icon"/></a></td>
+						<td><a href="https://twitter.com/erilyth"><img src="Images/twitterlogo.png" class="icon"/></a></td>
+						<td><a href="mailto:vishalvenkat71@gmail.com"><img src="Images/gmaillogo.png" class="icon"/></a></td>
+						<td><a href="https://github.com/erilyth"><img src="Images/gitlogo.png" class="icon"/></a></td>
+					</tr>
+				</table>
+			</div>
+			<div id="maincontent32" style="margin-left:15%; margin-top:190px; z-index:2; width:100%; position:absolute;">
+				<p style="font-size: 4em; font-weight: bold;">Get in touch</p>
+				<p style="font-size: 2.2em; width:35%;">Get to know more about me and the kind of work I do</p>
+			</div>
+			<div id="maincontent33" style="margin-left:59.5%; margin-top:195px; z-index:2; width:30%; position:absolute; height:12px; background-color: #A8A8A8;">
+			</div>
+			<div id="maincontent34" style="margin-left:56%; margin-top:345px; z-index:2; width:30%; position:absolute; height:12px; background-color: #A8A8A8;">
+			</div>
+			<div class="contact" style="height:100%;">
+			</div>
+		</div>
+
+		<!-- AngularJS library -->
+		<script src="angular.min.js"></script>
+		<script src="crossfade.js"></script>
+		<script src="menu.js"></script>
+		<script src="scroll.js"></script>
+	</body>
+</html>
