@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="projectsApp">
+<html>
 	<head>
 		<meta charset="utf-8" />
 		<title>My Projects</title>
 		<!-- jQuery library -->
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="mustache.min.js"></script>
 		<!-- Bootstrap.css -->
 		<link rel="stylesheet" href="bootstrap.min.css">
 		<link rel="stylesheet" href="bootstrap-theme.min.css">
@@ -25,7 +26,7 @@
 			Projects
 		</div>
 		<div class="boundary"></div>
-		<div class="menuContainer" ng-controller="menuCtrl">
+		<div class="menuContainer">
 			<img id="mainbutton" src="Images/menubutton.png" height="60px" class="menuButton" onclick="updateMenuItems()"/>
 			<div id="menucontainer"></div>
 			<a href="index.html" title="Home">
@@ -37,23 +38,17 @@
 			<a href="https://erilyth.wordpress.com/" title="Blog">
 				<img src="Images/blog.png" height="30px" class="menuIcon"/>
 			</a>
-			<a href="instructables.html" title="Instructables">
-				<img src="Images/instructables.png" height="22px" style="margin-left:4px; margin-top:6px;" class="menuIcon"/>
-			</a>
 		</div>
-		<div class="container" ng-controller="projectsCtrl">
-			<div ng-repeat="project in projectList" style="margin:4%;margin-left:5%;">
-				<projectdetail projectdetaildata="project" class="wow magictime spaceInLeft" data-wow-offset="200"></projectdetail>
+		<div class="container">
+			<div id="projectcontainer" style="margin:4%;margin-left:5%;">
+
 			</div>
 		</div>
 		<!-- AngularJS library -->
 		<script src="angular.min.js"></script>
 		<script src="crossfade.js"></script>
-		<script src="directives/projectdetail.js"></script>
-		<script src="controllers/controller.js"></script>
 		<script src="menu.js"></script>
+		<script src="projects.js"></script>
 		<script src="scroll.js"></script>
 	</body>
 </html>
-
-

@@ -1,0 +1,9 @@
+First Person Shooter Game (Unity)
+%$
+https://github.com/erilyth/First-Person-Shooter-Unity-
+%$
+https://wiki.sugarlabs.org/images/thumb/6/68/FirstPersonShooter2.png/800px-FirstPersonShooter2.png
+%$
+A simple FPS game where enemies follow you and they need to be shot down. A pistol, uzi and shotgun are the weapons available as of now. 
+There are 2 kinds of enemies, Bombs and Robots, Bombs deal burst damage whereas Robots deal normal damage.
+Developed using the Unity game engine in C#

@@ -11,17 +11,26 @@ $(window).resize(function() {
 
 function hideMenuWithScroll() {
     var menucontainer = $('#menucontainer')
+    var menubutton = $('#mainbutton')
     if (scrollState == 0){
         menucontainer.animate({
-            'height': 64,
-            'top': '30.5%'
-        }, { queue: false, duration: 200 })
+            'height': 64 + 5,
+            'top': '30%'
+        }, { queue: false, duration: 200 });
+        menubutton.animate({
+            'height': 60,
+            'top': '30%'
+        }, { queue: false, duration: 200 });
     }
     else {
         menucontainer.animate({
-            'height': 64,
-            'top': '50.5%'
-        }, { queue: false, duration: 200 })   
+            'height': 64 + 5,
+            'top': '50%'
+        }, { queue: false, duration: 200 });
+        menubutton.animate({
+            'height': 60,
+            'top': '50%'
+        }, { queue: false, duration: 200 });
     }
     if (menuState == 1){
         updateMenuItems();
@@ -48,11 +57,10 @@ $(window).scroll(function() {
             hideMenuWithScroll();
         }
         scrollState = 0;
-    } 
+    }
 });
 
 function updateMenuItems() {
-    console.log("MENU BUTTON CLICKED");
     if (menuState == 0) {
         //Reveal the menu
         menuState = 2;
@@ -62,7 +70,7 @@ function updateMenuItems() {
             'display': 'block'
         })
         menucontainer.animate({
-            height: (imgs.length+1)*64
+            height: (imgs.length+1)*64 + 5
         })
         var shift_cur = 0;
         imgs.each(function(){
@@ -88,7 +96,7 @@ function updateMenuItems() {
             var left = $(this).position().left;
             $(this).animate({
                 top: top - height/2,
-                left: left - width/2,                
+                left: left - width/2,
                 height: 2*height
             })
         });
@@ -107,7 +115,7 @@ function updateMenuItems() {
         var imgs=$('.menuIcon');
         var menucontainer = $('#menucontainer')
         menucontainer.animate({
-            height: 64
+            height: 64 + 5
         })
         var shift_cur = 0;
         imgs.each(function(){
@@ -127,9 +135,9 @@ function updateMenuItems() {
             imgs.each(function(){
                 $(this).css({
                     'display': 'none'
-                })          
+                })
             });
             menuState = 0;
         },400);
-    }  
+    }
 }

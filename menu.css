@@ -12,7 +12,7 @@ img.mainTitle {
     position: fixed;
     border-radius: 10px;
     top: 50%;
-    background-color: #A8B7BF; 
+    background-color: #A8B7BF;
     height: 70px;
     width: 70px;
     margin-left: 9px;
@@ -26,7 +26,7 @@ img.mainTitle {
 }
 
 img.menuButton {
-    position:fixed; 
+    position:fixed;
     top:50%;
     left: 15px;
     z-index: 5;
@@ -40,6 +40,7 @@ img.menuIcon {
     position:fixed;
     top: 53%;
     z-index: 2;
+    display: none;
 }
 
 .changeText span {

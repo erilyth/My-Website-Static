@@ -1,0 +1,8 @@
+Trendspace (A shopping website)
+%$
+https://trendspace.pythonanywhere.com/
+%$
+http://i.imgur.com/pi18w0C.png
+%$
+A shopping website prototype. It has all the basic features of a shopping website such as, search, user accounts, cart, purchase history, wishlists, forum, feedback section, seller space etc.
+Developed using the Web2Py framework
