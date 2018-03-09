@@ -65,7 +65,7 @@ body{
 	text-align: center;
 	font-family: FortuneCity;
 	text-shadow: 1px 1px 1px #aaaaaa;
-	margin-left:-8%;
+	margin-left:-6%;
 	font-size:1em;
 	color:#808080;
 }
@@ -85,6 +85,17 @@ body{
 	position: relative;
 	width: 100%;
 	z-index: -10;
+}
+
+.portrait {
+  width: 500px;
+  margin: 0 auto;
+  height: 100%;
+  background-image: url("Images/development.jpg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 .boundaryDivider {
